@@ -1,0 +1,59 @@
+h1 {
+  font-size: 7rem !important;
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+.word {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+}
+.mid-circle {
+  height: 15px;
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  aspect-ratio: 1/1;
+  background: #000;
+  border-radius: 100%;
+  position: relative;
+  top: 28px;
+}
+.center-circle {
+  height: 0px;
+  margin: auto;
+  aspect-ratio: 1/1;
+  background: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 34px;
+  left: 0;
+  border-radius: 100%;
+  z-index: 10;
+}
+.arrow-container {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -20vw;
+  display: flex;
+
+  place-items: center;
+  justify-items: center;
+}
+.arrow-tail {
+  background: #ff5c00;
+  height: 3px;
+}
