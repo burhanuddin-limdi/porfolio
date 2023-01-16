@@ -2,3 +2,9 @@ nav {
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
 }
+
+.active {
+  text-decoration: line-through;
+  text-decoration-color: #ff5c00;
+  text-decoration-thickness: 2px;
+}

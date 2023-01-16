@@ -1,1 +1,7 @@
-
+.question {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  width: 500px;
+  line-height: 85px;
+}

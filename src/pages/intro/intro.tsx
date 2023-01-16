@@ -38,7 +38,7 @@ export const Intro: React.FC = () => {
 
   return (
     <>
-      <div className="h-[100vh] grid place-content-center">
+      <div className="h-screen w-screen bg-[#f5f5f0] text-[#101014] grid place-content-center">
         <h1>
           <div className="word">
             <div className="char">H</div>
