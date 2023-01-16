@@ -1,8 +1,13 @@
 import React, { useLayoutEffect } from "react";
 import gsap from "gsap";
 import "./intro.css";
+import { useNavigate } from "react-router-dom";
 
 export const Intro: React.FC = () => {
+  const navigate = useNavigate();
+  const navigateToAbout = () => {
+    navigate("/about");
+  };
   useLayoutEffect(() => {
     const tl = gsap.timeline();
     tl.to(".char", {
@@ -25,6 +30,7 @@ export const Intro: React.FC = () => {
         width: "100vw",
         height: "100vh",
         borderRadius: 0,
+        onComplete: navigateToAbout,
       });
 
     // gsap.to(".mid-circle", { cssRule: { innerWidth: 2000 } });

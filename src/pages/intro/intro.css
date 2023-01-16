@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+  background: #f5f5fa;
+  color: #101014;
+}
+
 h1 {
   font-size: 7rem !important;
   font-family: "Koulen", cursive;
@@ -22,7 +28,7 @@ h1 {
   margin-right: 10px;
   margin-left: 10px;
   aspect-ratio: 1/1;
-  background: #000;
+  background: #101014;
   border-radius: 100%;
   position: relative;
   top: 28px;
@@ -31,7 +37,7 @@ h1 {
   height: 0px;
   margin: auto;
   aspect-ratio: 1/1;
-  background: #000;
+  background: #101014;
   position: absolute;
   top: 0;
   bottom: 0;
