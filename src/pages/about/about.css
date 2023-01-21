@@ -1,7 +1,18 @@
 .question {
   font-family: "Fredoka", sans-serif;
   font-weight: 500;
-  font-size: 4.5rem;
+  font-size: 4rem;
   width: 500px;
   line-height: 85px;
+}
+#question-arrow {
+  stroke-dasharray: 1124;
+  stroke-dashoffset: 0;
+  animation: sign 3s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 1124;
+  }
 }

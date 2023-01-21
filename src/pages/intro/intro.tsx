@@ -22,8 +22,8 @@ export const Intro: React.FC = () => {
         delay: 1,
       })
       .to(".arrow-tail", {
-        width: "130vw",
-        duration: 0.7,
+        width: "100vw",
+        duration: 0.5,
       })
       .to(".center-circle", {
         duration: 1,
@@ -58,7 +58,6 @@ export const Intro: React.FC = () => {
       <div className="center-circle"></div>
       <div className="arrow-container">
         <div className="arrow-tail"></div>
-        <img src="../src/assets/Arrow.png" alt="" />
       </div>
     </>
   );

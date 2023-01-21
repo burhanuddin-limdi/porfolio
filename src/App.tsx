@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </div>
 
-      <div className="h-screen fixed w-[1px] bg-[#686868] right-[15vw] top-0"></div>
+      <div className="h-screen fixed w-[1px] bg-[#686868] right-[20vw] top-0"></div>
     </>
   );
 }

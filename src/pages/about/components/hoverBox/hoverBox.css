@@ -1,0 +1,13 @@
+.hover-bottom {
+  font-family: "JetBrains Mono", monospace;
+}
+.hover-top {
+  font-family: "Fredoka", sans-serif;
+  clip-path: circle(50px at var(--x, -20%) var(--y, -200%));
+  transition: clip-path 100ms;
+}
+.is-open {
+  clip-path: circle(200% at 100% 100%);
+  transition: clip-path 1.3s;
+  transition-timing-function: cubic-bezier(1, -0.01, 0.01, 0.99);
+}
