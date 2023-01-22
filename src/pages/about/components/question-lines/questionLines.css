@@ -1,0 +1,22 @@
+.arrow-in {
+  stroke-dasharray: 1124;
+  stroke-dashoffset: -1124;
+  animation: sign-in 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes sign-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.arrow-out {
+  stroke-dasharray: 1124;
+  stroke-dashoffset: 0;
+  animation: sign-out 1s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes sign-out {
+  to {
+    stroke-dashoffset: -1124;
+  }
+}

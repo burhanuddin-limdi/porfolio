@@ -1,15 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
+import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 export const Navbar: React.FC = () => {
   const location = useLocation();
   const [currentPath, setcurrentPath] = useState("");
+  const navigate = useNavigate();
+
   useEffect(() => {
-    console.log("Current route:", location.pathname);
     setcurrentPath(location.pathname);
   }, [location]);
+
+  useLayoutEffect(() => {
+    gsap.to("nav", 1, {
+      y: 0,
+      opacity: 1,
+    });
+  });
+  const aboutExitAnimation = () => {
+    document.querySelector("#question-arrow")?.classList.add("arrow-out");
+    gsap.to("#about", 1, {
+      y: 15,
+      opacity: 0,
+    });
+  };
+  const navigateToWork = () => {
+    aboutExitAnimation();
+    setTimeout(() => {
+      navigate("/work");
+    }, 1000);
+  };
   return (
-    <nav className="fixed text-[#f5f5fa]">
+    <nav className="fixed text-[#f5f5fa] z-[30]">
       <ul className="flex w-screen justify-center space-x-[120px] my-5">
         <li
           className={
@@ -22,9 +45,9 @@ export const Navbar: React.FC = () => {
           className={
             "cursor-pointer " + (currentPath == "/work" ? "active" : "")
           }
+          onClick={navigateToWork}
         >
-          {" "}
-          <Link to={"/work"}>{"<Work/>"}</Link>
+          {"<Work/>"}
         </li>
         <li
           className={

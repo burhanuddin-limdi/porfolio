@@ -1,6 +1,8 @@
 nav {
   font-family: "JetBrains Mono", monospace;
   font-weight: 500;
+  opacity: 0;
+  transform: translateY(15px);
 }
 
 .active {
