@@ -1,0 +1,48 @@
+#projects {
+  opacity: 0;
+  transform: translateY(15px);
+}
+.project-line-in {
+  stroke-dasharray: 2873;
+  stroke-dashoffset: -2873;
+  animation: project-sign-in 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes project-sign-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.project-line-out {
+  stroke-dasharray: 2873;
+  stroke-dashoffset: 0;
+  animation: project-sign-out 1s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes project-sign-out {
+  to {
+    stroke-dashoffset: 2873;
+  }
+}
+.link {
+  cursor: pointer;
+}
+.link > .letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+.link:hover .letter {
+  transition-duration: 800ms;
+}
+.link:hover > .letter:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+.link:hover > .letter:nth-child(2) {
+  transform: translate(50%, -45%) rotate(10deg);
+}
+.link:hover > .letter:nth-child(3) {
+  transform: translate(0, 70%) rotate(5deg);
+}
+.link:hover > .letter:nth-child(4) {
+  transform: translate(30%, 0%) rotate(12deg);
+}

@@ -1,0 +1,102 @@
+import React, { useLayoutEffect } from "react";
+import "./projects.css";
+import { Navbar } from "../../navbar/navbar";
+import { gsap } from "gsap";
+export const Projects: React.FC = () => {
+  useLayoutEffect(() => {
+    gsap.to("#projects", 1, {
+      y: 0,
+      opacity: 1,
+    });
+  });
+  return (
+    <>
+      <Navbar />
+      <div id="projects" className="w-screen h-screen">
+        <div className="flex h-fit w-fit absolute inset-0 m-auto space-x-10 z-20 bottom-4 px-20">
+          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+            <p className="font-medium text-xl">LIMFLIX - NETFLIX CLONE</p>
+            <p className="text-[#ACABAB]">
+              It is a web app which gives you information about the latest,
+              trending and upcoming movies and tv shows. It is made using
+              angular, typescript and TMDB API.
+            </p>
+            <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+              <a className="link">
+                <span className="letter">L</span>
+                <span className="letter">i</span>
+                <span className="letter">v</span>
+                <span className="letter">e</span>
+              </a>
+              <a className="link">
+                <span className="letter">C</span>
+                <span className="letter">o</span>
+                <span className="letter">d</span>
+                <span className="letter">e</span>
+              </a>
+            </div>
+          </div>
+          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+            <p className="font-medium text-xl">PENCIL CODE</p>
+            <p className="text-[#ACABAB]">
+              Pencil code is basically a codepen clone. It is made using vanilla
+              javascript and tailwind css.
+            </p>
+            <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+              <a className="link">
+                <span className="letter">L</span>
+                <span className="letter">i</span>
+                <span className="letter">v</span>
+                <span className="letter">e</span>
+              </a>
+              <a className="link">
+                <span className="letter">C</span>
+                <span className="letter">o</span>
+                <span className="letter">d</span>
+                <span className="letter">e</span>
+              </a>
+            </div>
+          </div>
+          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+            <p className="font-medium text-xl">RESUME MAKER</p>
+            <p className="text-[#ACABAB]">
+              Resume maker is a React web application. Here, you enter your
+              details and it sends them to NodeJS backend, which generates a pdf
+              of your resume and sends it back.
+            </p>
+            <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+              <a className="link">
+                <span className="letter">L</span>
+                <span className="letter">i</span>
+                <span className="letter">v</span>
+                <span className="letter">e</span>
+              </a>
+              <a className="link">
+                <span className="letter">C</span>
+                <span className="letter">o</span>
+                <span className="letter">d</span>
+                <span className="letter">e</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p className="absolute text-[14rem] text-[#151515] jetbrains font-medium z-[0] -left-[4rem] bottom-[3rem]">
+          {"<Projects/>"}
+        </p>
+        <svg
+          className="w-[97vw] absolute top-0 bottom-0 left-0 m-auto z-[19] project-line-in"
+          id="projects-line"
+          viewBox="0 0 1424 54"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 52H1397C1410.81 52 1422 40.8071 1422 27V27C1422 13.1929 1410.81 2 1397 2H0"
+            stroke="#FF5C00"
+            strokeWidth="3"
+          />
+        </svg>
+      </div>
+    </>
+  );
+};

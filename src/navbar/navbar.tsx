@@ -1,8 +1,9 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
+import { exitAnimation } from "./exitAnimations";
 export const Navbar: React.FC = () => {
   const location = useLocation();
   const [currentPath, setcurrentPath] = useState("");
@@ -10,52 +11,48 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     setcurrentPath(location.pathname);
-  }, [location]);
-
-  useLayoutEffect(() => {
     gsap.to("nav", 1, {
       y: 0,
       opacity: 1,
     });
-  });
-  const aboutExitAnimation = () => {
-    document.querySelector("#question-arrow")?.classList.add("arrow-out");
-    gsap.to("#about", 1, {
-      y: 15,
-      opacity: 0,
-    });
-  };
-  const navigateToWork = () => {
-    aboutExitAnimation();
+  }, [location]);
+  const navigateToProjects = () => {
+    exitAnimation(location.pathname);
     setTimeout(() => {
-      navigate("/work");
+      navigate("/projects");
+    }, 1000);
+  };
+  const navigateToAbout = () => {
+    exitAnimation(location.pathname);
+    setTimeout(() => {
+      navigate("/about");
     }, 1000);
   };
   return (
-    <nav className="fixed text-[#f5f5fa] z-[30]">
-      <ul className="flex w-screen justify-center space-x-[120px] my-5">
+    <nav className="fixed text-[#f5f5fa] z-[30] flex justify-between place-items-center w-screen px-44">
+      <p className="text-[#ff5c00] koulen text-xl">BURHANUDDIN.DEV</p>
+      <ul className="flex w-fit justify-center space-x-10 my-5 place-items-center">
         <li
           className={
             "cursor-pointer " + (currentPath == "/about" ? "active" : "")
           }
+          onClick={navigateToAbout}
         >
-          <Link to={"/about"}>{"<About/>"}</Link>
+          {"<About/>"}
         </li>
         <li
           className={
-            "cursor-pointer " + (currentPath == "/work" ? "active" : "")
+            "cursor-pointer " + (currentPath == "/projects" ? "active" : "")
           }
-          onClick={navigateToWork}
+          onClick={navigateToProjects}
         >
-          {"<Work/>"}
+          {"<Projects/>"}
         </li>
-        <li
-          className={
-            "cursor-pointer " + (currentPath == "/contact" ? "active" : "")
-          }
-        >
-          {" "}
-          <Link to={"/contact"}>{"<Contact/>"}</Link>
+        <li>{"<Skills/>"}</li>
+        <li>
+          <button className="bg-[#ff5c00] rounded-[9999px] py-2 px-5 text-[#101014]">
+            {"<Contact/>"}
+          </button>
         </li>
       </ul>
     </nav>
