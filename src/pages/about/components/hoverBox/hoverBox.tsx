@@ -46,7 +46,7 @@ export const HoverBox: React.FC = () => {
       onMouseLeave={resetSpotlight}
     >
       <div className="w-[400px] h-[250px] rounded-3xl border border-[#f5f5fa] bg-[#101014] hover-bottom">
-        <p className="font-medium text-6xl text-[#151515] relative top-5 left-5">
+        <p className="font-medium text-6xl text-[#222222] relative top-5 left-5">
           {"hover:{}"}
         </p>
       </div>
