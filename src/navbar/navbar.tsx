@@ -16,16 +16,10 @@ export const Navbar: React.FC = () => {
       opacity: 1,
     });
   }, [location]);
-  const navigateToProjects = () => {
-    exitAnimation(location.pathname);
+  const navigateTo = (route: string) => {
+    exitAnimation(location.pathname, route);
     setTimeout(() => {
-      navigate("/projects");
-    }, 1000);
-  };
-  const navigateToAbout = () => {
-    exitAnimation(location.pathname);
-    setTimeout(() => {
-      navigate("/about");
+      navigate(route);
     }, 1000);
   };
   return (
@@ -36,7 +30,9 @@ export const Navbar: React.FC = () => {
           className={
             "cursor-pointer " + (currentPath == "/about" ? "active" : "")
           }
-          onClick={navigateToAbout}
+          onClick={() => {
+            navigateTo("/about");
+          }}
         >
           {"<About/>"}
         </li>
@@ -44,11 +40,22 @@ export const Navbar: React.FC = () => {
           className={
             "cursor-pointer " + (currentPath == "/projects" ? "active" : "")
           }
-          onClick={navigateToProjects}
+          onClick={() => {
+            navigateTo("/projects");
+          }}
         >
           {"<Projects/>"}
         </li>
-        <li>{"<Skills/>"}</li>
+        <li
+          className={
+            "cursor-pointer " + (currentPath == "/skills" ? "active" : "")
+          }
+          onClick={() => {
+            navigateTo("/skills");
+          }}
+        >
+          {"<Experience/>"}
+        </li>
         <li>
           <button className="bg-[#ff5c00] rounded-[9999px] py-2 px-5 text-[#101014]">
             {"<Contact/>"}

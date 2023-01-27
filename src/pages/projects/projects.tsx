@@ -8,13 +8,20 @@ export const Projects: React.FC = () => {
       y: 0,
       opacity: 1,
     });
+    gsap.to(".project", {
+      duration: 1,
+      delay: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.33,
+    });
   });
   return (
     <>
       <Navbar />
       <div id="projects" className="w-screen h-screen">
         <div className="flex h-fit w-fit absolute inset-0 m-auto space-x-10 z-20 bottom-4 px-20">
-          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
             <p className="font-medium text-xl">LIMFLIX - NETFLIX CLONE</p>
             <p className="text-[#ACABAB]">
               It is a web app which gives you information about the latest,
@@ -22,13 +29,21 @@ export const Projects: React.FC = () => {
               angular, typescript and TMDB API.
             </p>
             <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
-              <a className="link">
+              <a
+                className="link"
+                href="https://limflix.netlify.app/"
+                target="_blank"
+              >
                 <span className="letter">L</span>
                 <span className="letter">i</span>
                 <span className="letter">v</span>
                 <span className="letter">e</span>
               </a>
-              <a className="link">
+              <a
+                className="link"
+                href="https://github.com/burhanuddin-limdi/Limflix_Movie_Website"
+                target="_blank"
+              >
                 <span className="letter">C</span>
                 <span className="letter">o</span>
                 <span className="letter">d</span>
@@ -36,20 +51,28 @@ export const Projects: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
             <p className="font-medium text-xl">PENCIL CODE</p>
             <p className="text-[#ACABAB]">
               Pencil code is basically a codepen clone. It is made using vanilla
               javascript and tailwind css.
             </p>
             <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
-              <a className="link">
+              <a
+                className="link"
+                href="https://pencilcode.netlify.app/"
+                target="_blank"
+              >
                 <span className="letter">L</span>
                 <span className="letter">i</span>
                 <span className="letter">v</span>
                 <span className="letter">e</span>
               </a>
-              <a className="link">
+              <a
+                className="link"
+                href="https://github.com/burhanuddin-limdi/Pencil-code"
+                target="_blank"
+              >
                 <span className="letter">C</span>
                 <span className="letter">o</span>
                 <span className="letter">d</span>
@@ -57,7 +80,7 @@ export const Projects: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
             <p className="font-medium text-xl">RESUME MAKER</p>
             <p className="text-[#ACABAB]">
               Resume maker is a React web application. Here, you enter your
@@ -65,13 +88,21 @@ export const Projects: React.FC = () => {
               of your resume and sends it back.
             </p>
             <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
-              <a className="link">
+              <a
+                className="link"
+                href="https://resume-maker-6skg.onrender.com/"
+                target="_blank"
+              >
                 <span className="letter">L</span>
                 <span className="letter">i</span>
                 <span className="letter">v</span>
                 <span className="letter">e</span>
               </a>
-              <a className="link">
+              <a
+                className="link"
+                href="https://github.com/burhanuddin-limdi/resume-maker-app"
+                target="_blank"
+              >
                 <span className="letter">C</span>
                 <span className="letter">o</span>
                 <span className="letter">d</span>

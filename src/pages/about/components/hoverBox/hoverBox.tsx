@@ -50,11 +50,25 @@ export const HoverBox: React.FC = () => {
           {"hover:{}"}
         </p>
       </div>
-      <div className="bg-[#f5f5fa] absolute inset-0 rounded-3xl text-[#101014] hover-top">
-        <p className="font-normal text-2xl m-8">
-          I am a full stack web developer, designer and a problem solver.
+      {/* <div className="bg-[#f5f5fa] absolute inset-0 rounded-3xl text-[#101014] hover-top">
+        <p className="font-normal text-xl m-8">
+          I am a full stack web developer and designer. I build small to large
+          scale web apps for businesses.
         </p>
-        <p className="font-medium text-3xl m-8">IDEAS + ME = REALITY</p>
+        <p className="font-medium text-2xl m-8">YOUR IDEAS, MY EXECUTION</p>
+      </div> */}
+      <div className="bg-[#f5f5fa] absolute inset-0 rounded-3xl text-[#101014] hover-top">
+        <div className="font-normal text-[17px] m-7 space-y-3">
+          <p>
+            I am a full stack web developer and designer, experienced in
+            creating and maintaining websites and web applications using a
+            variety of technologies.
+          </p>
+          <p>
+            I am also a team player and can work with designers, project
+            managers and other developers to successfully execute projects.
+          </p>
+        </div>
       </div>
       {showLightBtn && !isopen && (
         <img

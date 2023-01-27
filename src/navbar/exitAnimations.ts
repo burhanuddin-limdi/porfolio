@@ -1,17 +1,20 @@
 import gsap from "gsap";
 
-export const exitAnimation = (location: string) => {
-  switch (location) {
-    case "/about":
-      aboutExitAnimation();
-      break;
-    case "/projects":
-      projectsExitAnimation();
-      break;
-    default:
-      break;
+export const exitAnimation = (location: string, dest: string) => {
+  if (dest != location) {
+    switch (location) {
+      case "/about":
+        aboutExitAnimation();
+        navbarExitAnimation();
+        break;
+      case "/projects":
+        projectsExitAnimation();
+        navbarExitAnimation();
+        break;
+      default:
+        break;
+    }
   }
-  navbarExitAnimation();
 };
 
 const navbarExitAnimation = () => {

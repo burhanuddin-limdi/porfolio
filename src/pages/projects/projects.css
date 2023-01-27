@@ -2,6 +2,10 @@
   opacity: 0;
   transform: translateY(15px);
 }
+.project {
+  opacity: 0;
+  transform: translateY(15px);
+}
 .project-line-in {
   stroke-dasharray: 2873;
   stroke-dashoffset: -2873;
