@@ -60,9 +60,9 @@ export const HoverBox: React.FC = () => {
       <div className="bg-[#f5f5fa] absolute inset-0 rounded-3xl text-[#101014] hover-top">
         <div className="font-normal text-[17px] m-7 space-y-3">
           <p>
-            I am a full stack web developer and designer, experienced in
-            creating and maintaining websites and web applications using a
-            variety of technologies.
+            I am a full stack web developer and a UI/UX designer, experienced in
+            creating and maintaining web applications using a variety of
+            technologies.
           </p>
           <p>
             I am also a team player and can work with designers, project

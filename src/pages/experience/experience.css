@@ -1,0 +1,30 @@
+#experience {
+  opacity: 0;
+  transform: translateY(15px);
+}
+.experience {
+  opacity: 0;
+  transform: translateY(15px);
+}
+.experience-line-in {
+  stroke-dasharray: 2873;
+  stroke-dashoffset: -2873;
+  animation: experience-sign-in 2s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes experience-sign-in {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.experience-line-out {
+  stroke-dasharray: 2873;
+  stroke-dashoffset: 0;
+  animation: experience-sign-out 1s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes experience-sign-out {
+  to {
+    stroke-dashoffset: 2873;
+  }
+}

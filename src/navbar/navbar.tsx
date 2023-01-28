@@ -38,6 +38,16 @@ export const Navbar: React.FC = () => {
         </li>
         <li
           className={
+            "cursor-pointer " + (currentPath == "/experience" ? "active" : "")
+          }
+          onClick={() => {
+            navigateTo("/experience");
+          }}
+        >
+          {"<Experience/>"}
+        </li>
+        <li
+          className={
             "cursor-pointer " + (currentPath == "/projects" ? "active" : "")
           }
           onClick={() => {
@@ -46,22 +56,10 @@ export const Navbar: React.FC = () => {
         >
           {"<Projects/>"}
         </li>
-        <li
-          className={
-            "cursor-pointer " + (currentPath == "/skills" ? "active" : "")
-          }
-          onClick={() => {
-            navigateTo("/skills");
-          }}
-        >
-          {"<Experience/>"}
-        </li>
-        <li>
-          <button className="bg-[#ff5c00] rounded-[9999px] py-2 px-5 text-[#101014]">
-            {"<Contact/>"}
-          </button>
-        </li>
       </ul>
+      <button className="bg-[#ff5c00] rounded-[9999px] py-1.5 px-4 text-[#101014]">
+        {"<Contact/>"}
+      </button>
     </nav>
   );
 };

@@ -19,7 +19,7 @@ export const Projects: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div id="projects" className="w-screen h-screen">
+      <div id="projects" className="w-screen h-screen overflow-clip">
         <div className="flex h-fit w-fit absolute inset-0 m-auto space-x-10 z-20 bottom-4 px-20">
           <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
             <p className="font-medium text-xl">LIMFLIX - NETFLIX CLONE</p>

@@ -4,4 +4,7 @@
 body {
   background-color: #101014;
   color: #f5f5fa;
+  width: 100vw;
+  height: 100vh;
+  overflow: clip;
 }

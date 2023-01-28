@@ -11,6 +11,10 @@ export const exitAnimation = (location: string, dest: string) => {
         projectsExitAnimation();
         navbarExitAnimation();
         break;
+      case "/experience":
+        experienceAnimation();
+        navbarExitAnimation();
+        break;
       default:
         break;
     }
@@ -26,15 +30,23 @@ const navbarExitAnimation = () => {
 
 const aboutExitAnimation = () => {
   document.querySelector("#question-arrow")?.classList.add("arrow-out");
-  gsap.to("#about", 1, {
-    y: 15,
-    opacity: 0,
-  });
+  pageExitAnimation("#about");
 };
 
 const projectsExitAnimation = () => {
   document.querySelector("#projects-line")?.classList.add("project-line-out");
-  gsap.to("#projects", 1, {
+  pageExitAnimation("#projects");
+};
+
+const experienceAnimation = () => {
+  document
+    .querySelector("#experience-line")
+    ?.classList.add("experience-line-out");
+  pageExitAnimation("#experience");
+};
+
+const pageExitAnimation = (pageId: string) => {
+  gsap.to(pageId, 1, {
     y: 15,
     opacity: 0,
   });
