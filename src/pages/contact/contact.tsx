@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
       <div className="relative w-screen h-screen overflow-clip" id="contact">
         <form
           className="absolute inset-0 w-fit h-fit m-auto space-y-3 z-10 border border-[#f5f5fa] rounded-md p-5 bg-[#101014]"
-          action="https://formsubmit.co/burhanuddinlimdiwala5123@gmail.com"
+          action="https://formsubmit.co/el/vimuku"
           method="POST"
         >
           <p className="fredoka font-medium text-2xl">Let's Talk</p>
