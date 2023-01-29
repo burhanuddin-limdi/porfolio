@@ -15,6 +15,10 @@ export const exitAnimation = (location: string, dest: string) => {
         experienceAnimation();
         navbarExitAnimation();
         break;
+      case "/contact":
+        contactExitAnimation();
+        navbarExitAnimation();
+        break;
       default:
         break;
     }
@@ -26,6 +30,10 @@ const navbarExitAnimation = () => {
     y: 15,
     opacity: 0,
   });
+};
+
+const contactExitAnimation = () => {
+  pageExitAnimation("#contact");
 };
 
 const aboutExitAnimation = () => {

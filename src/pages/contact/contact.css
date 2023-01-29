@@ -1,0 +1,67 @@
+/* div.input-block {
+  position: relative;
+} */
+
+#contact {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+div.input-block span.placeholder {
+  position: absolute;
+  margin: 17px 0;
+  padding: 0 4px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  top: 0px;
+  bottom: 0;
+  left: 7px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  background: #101014;
+  pointer-events: none;
+}
+div.input-block input:valid + span.placeholder,
+div.input-block input:focus + span.placeholder {
+  transform: scale(0.8) translateY(-22px);
+  background: #101014;
+}
+div.input-block input:focus {
+  color: #f5f5fa;
+  border-color: #ff5c00;
+  outline: none;
+}
+div.input-block input:focus + span.placeholder {
+  color: #ff5c00;
+}
+div.msg-txt span.placeholder {
+  position: absolute;
+  margin: 17px 0;
+  padding: 0 4px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  top: -10px;
+  left: 7px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  background: none;
+  pointer-events: none;
+}
+div.msg-txt textarea:valid + span.placeholder,
+div.msg-txt textarea:focus + span.placeholder {
+  transform: scale(0.8) translateY(-20px);
+  background: #101014;
+}
+div.msg-txt textarea:focus {
+  color: #f5f5fa;
+  border-color: #ff5c00;
+  outline: none;
+}
+div.msg-txt textarea:focus + span.placeholder {
+  color: #ff5c00;
+  background: #101014;
+}

@@ -57,7 +57,12 @@ export const Navbar: React.FC = () => {
           {"<Projects/>"}
         </li>
       </ul>
-      <button className="bg-[#ff5c00] rounded-[9999px] py-1.5 px-4 text-[#101014]">
+      <button
+        className="bg-[#ff5c00] rounded-[9999px] py-1.5 px-4 text-[#101014]"
+        onClick={() => {
+          navigateTo("/contact");
+        }}
+      >
         {"<Contact/>"}
       </button>
     </nav>
