@@ -61,7 +61,7 @@ export const Projects: React.FC = () => {
             <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
               <a
                 className="link"
-                href="https://pencilcode.netlify.app/"
+                href="https://codepencil-project.netlify.app/"
                 target="_blank"
               >
                 <span className="letter">L</span>

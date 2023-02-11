@@ -32,21 +32,19 @@ export const Intro: React.FC = () => {
         borderRadius: 0,
         onComplete: navigateToAbout,
       });
-
-    // gsap.to(".mid-circle", { cssRule: { innerWidth: 2000 } });
   });
 
   return (
     <>
       <div className="h-screen w-screen bg-[#f5f5f0] text-[#101014] grid place-content-center">
-        <h1>
+        <h1 className="md:text-[7rem] sm:text-[6rem] vsm:text-[4rem] text-[3rem]">
           <div className="word">
             <div className="char">H</div>
             <div className="char">E</div>
             <div className="char">L</div>
             <div className="char">L</div>
             <div className="char">O</div>
-            <div className="char mid-circle"></div>
+            <div className="char mid-circle h-[8px] vsm:h-[10px] sm:h-[15px] top-[12px] vsm:top-[16px] sm:top-[25px] md:top-[28px]"></div>
             <div className="char">W</div>
             <div className="char">O</div>
             <div className="char">R</div>
