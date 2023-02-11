@@ -52,10 +52,11 @@ export const Projects: React.FC = () => {
             </div>
           </div>
           <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
-            <p className="font-medium text-xl">PENCIL CODE</p>
+            <p className="font-medium text-xl">CODEPENCIL</p>
             <p className="text-[#ACABAB]">
-              Pencil code is basically a codepen clone. It is made using vanilla
-              javascript and tailwind css.
+              Codepencil is basically a codepen clone. It is made using react,
+              typescript, tailwindcss. I have used codemirror library to make
+              the code editors.
             </p>
             <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
               <a
