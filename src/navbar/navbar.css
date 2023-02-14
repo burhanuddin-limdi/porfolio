@@ -10,3 +10,8 @@ nav {
   text-decoration-color: #ff5c00;
   text-decoration-thickness: 2px;
 }
+.side-nav {
+  right: -500px;
+  top: -500px;
+  background-color: rgba(255, 92, 0);
+}

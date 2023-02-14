@@ -22,7 +22,6 @@ h1 {
   position: relative;
 }
 .mid-circle {
-  /* height: 15px; */
   margin: auto;
   margin-right: 10px;
   margin-left: 10px;
@@ -30,7 +29,6 @@ h1 {
   background: #101014;
   border-radius: 100%;
   position: relative;
-  /* top: 28px; */
 }
 .center-circle {
   height: 0px;

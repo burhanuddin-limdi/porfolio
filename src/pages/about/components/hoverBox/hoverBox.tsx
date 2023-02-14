@@ -72,7 +72,7 @@ export const HoverBox: React.FC = () => {
       </div>
       {showLightBtn && !isopen && (
         <img
-          src="src/assets/lightning_duotone_line.png"
+          src="/lightning_duotone_line.png"
           alt=""
           className="absolute right-3 bottom-3 w-8 cursor-pointer"
           onClick={open}
@@ -80,7 +80,7 @@ export const HoverBox: React.FC = () => {
       )}
       {showLightBtn && isopen && (
         <img
-          src="src/assets/Vector 29.png"
+          src="/Vector 29.png"
           alt=""
           className="absolute right-5 bottom-4 w-4 cursor-pointer"
           onClick={open}

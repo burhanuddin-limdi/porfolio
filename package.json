@@ -12,8 +12,7 @@
     "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.2",
-    "vite-plugin-copy": "^0.1.6"
+    "react-router-dom": "^6.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

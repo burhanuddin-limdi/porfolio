@@ -137,10 +137,10 @@ export const Contact: React.FC = () => {
               href="https://www.linkedin.com/in/burhanuddin-limdi-4731221b7/"
               target="_blank"
             >
-              <img src="src/assets/linkedin.png" alt="" width={"25px"} />
+              <img src="/linkedin.png" alt="" width={"25px"} />
             </a>
             <a href="https://github.com/burhanuddin-limdi" target="_blank">
-              <img src="src/assets/github.png" alt="" width={"25px"} />
+              <img src="/github.png" alt="" width={"25px"} />
             </a>
           </div>
         </form>
