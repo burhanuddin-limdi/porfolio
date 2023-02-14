@@ -125,63 +125,63 @@ export const Navbar: React.FC = () => {
           <div className="bg-[#f5f5fa] h-[3px] w-[35px] hamburger-line relative"></div>
           <div className="bg-[#f5f5fa] h-[3px] w-[35px] hamburger-line relative"></div>
         </button>
-      </nav>
-      <div className="fixed z-[30] side-nav h-fit rounded-lg p-5 block md:hidden">
-        {/* <button className="absolute right-5 top-5" onClick={hideNav}>
+        <div className="fixed z-[30] side-nav h-fit rounded-lg p-5 block md:hidden">
+          {/* <button className="absolute right-5 top-5" onClick={hideNav}>
           <img src="/close.png" alt="" className="h-[30px]" />
         </button> */}
-        <ul className=" w-fit jetbrains">
-          <li
-            className={
-              "cursor-pointer " +
-              (currentPath == "/about"
-                ? "line-through decoration-[#101014] decoration-[2px]"
-                : "")
-            }
-            onClick={() => {
-              navigateTo("/about");
-            }}
-          >
-            {"<About/>"}
-          </li>
-          <li
-            className={
-              "cursor-pointer " +
-              (currentPath == "/experience"
-                ? "line-through decoration-[#101014] decoration-[2px]"
-                : "")
-            }
-            onClick={() => {
-              navigateTo("/experience");
-            }}
-          >
-            {"<Experience/>"}
-          </li>
-          <li
-            className={
-              "cursor-pointer " +
-              (currentPath == "/projects"
-                ? "line-through decoration-[#101014] decoration-[2px]"
-                : "")
-            }
-            onClick={() => {
-              navigateTo("/projects");
-            }}
-          >
-            {"<Projects/>"}
-          </li>
-          <li>
-            <button
-              className="text-[#101014] mt-5"
+          <ul className=" w-fit jetbrains">
+            <li
+              className={
+                "cursor-pointer " +
+                (currentPath == "/about"
+                  ? "line-through decoration-[#101014] decoration-[2px]"
+                  : "")
+              }
               onClick={() => {
-                navigateTo("/contact");
+                navigateTo("/about");
               }}
             >
-              {"<Contact/>"}
-            </button>
-          </li>
-        </ul>
-      </div>
+              {"<About/>"}
+            </li>
+            <li
+              className={
+                "cursor-pointer " +
+                (currentPath == "/experience"
+                  ? "line-through decoration-[#101014] decoration-[2px]"
+                  : "")
+              }
+              onClick={() => {
+                navigateTo("/experience");
+              }}
+            >
+              {"<Experience/>"}
+            </li>
+            <li
+              className={
+                "cursor-pointer " +
+                (currentPath == "/projects"
+                  ? "line-through decoration-[#101014] decoration-[2px]"
+                  : "")
+              }
+              onClick={() => {
+                navigateTo("/projects");
+              }}
+            >
+              {"<Projects/>"}
+            </li>
+            <li>
+              <button
+                className="text-[#101014] mt-5"
+                onClick={() => {
+                  navigateTo("/contact");
+                }}
+              >
+                {"<Contact/>"}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   );
 };
