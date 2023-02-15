@@ -15,7 +15,7 @@ export const About: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="w-screen h-screen" id="about">
+      <div className="w-screen h-screen overflow-clip" id="about">
         <div className="flex-col ml:flex-row hidden md:flex relative justify-center top-[30vh] place-items-center lg:space-x-12 w-screen z-20 ">
           <div className="relative">
             <p className="question">WHO IS BURHANUDDIN</p>
