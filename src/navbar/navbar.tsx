@@ -25,9 +25,10 @@ export const Navbar: React.FC = () => {
   let navVisible = false;
   const showNav = () => {
     gsap.to(".side-nav", {
-      duration: 1,
-      right: "64px",
-      top: "64px",
+      duration: 0.5,
+      height: "160px",
+      width: "160px",
+      opacity: 1,
     });
     gsap.to(".hamburger-line:nth-child(1)", {
       duration: 0.5,
@@ -47,9 +48,10 @@ export const Navbar: React.FC = () => {
   };
   const hideNav = () => {
     gsap.to(".side-nav", {
-      duration: 2,
-      right: "-500px",
-      top: "-500px",
+      duration: 0.5,
+      height: "0",
+      width: "0",
+      opacity: 0,
     });
     gsap.to(".hamburger-line:nth-child(1)", {
       duration: 0.5,
@@ -125,7 +127,7 @@ export const Navbar: React.FC = () => {
           <div className="bg-[#f5f5fa] h-[3px] w-[35px] hamburger-line relative"></div>
           <div className="bg-[#f5f5fa] h-[3px] w-[35px] hamburger-line relative"></div>
         </button>
-        <div className="fixed z-[30] side-nav h-fit rounded-lg p-5 block md:hidden">
+        <div className="fixed z-[30] side-nav rounded-lg p-5 block md:hidden right-16 top-16">
           {/* <button className="absolute right-5 top-5" onClick={hideNav}>
           <img src="/close.png" alt="" className="h-[30px]" />
         </button> */}

@@ -4,7 +4,7 @@ import "./questionLines.css";
 export const QuestionLines: React.FC = () => {
   return (
     <svg
-      className="h-[200px] fixed z-20 top-[31vh] right-[43.5vw]"
+      className="h-[200px] fixed z-20 top-[25.75vh] ml:top-[31vh] right-[17vw] ml:right-[43.5vw]"
       viewBox="0 0 800 205"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

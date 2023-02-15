@@ -11,7 +11,11 @@ nav {
   text-decoration-thickness: 2px;
 }
 .side-nav {
-  right: -500px;
-  top: -500px;
+  /* right: -500px; */
+  /* top: -500px; */
   background-color: rgba(255, 92, 0);
+  width: 0;
+  height: 0;
+  overflow: clip;
+  opacity: 0;
 }

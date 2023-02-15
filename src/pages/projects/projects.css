@@ -50,3 +50,7 @@
 .link:hover > .letter:nth-child(4) {
   transform: translate(30%, 0%) rotate(12deg);
 }
+.swiper-slide {
+  display: grid !important;
+  place-items: center !important;
+}

@@ -2,6 +2,9 @@ import React, { useLayoutEffect } from "react";
 import "./projects.css";
 import { Navbar } from "../../navbar/navbar";
 import { gsap } from "gsap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 export const Projects: React.FC = () => {
   useLayoutEffect(() => {
     gsap.to("#projects", 1, {
@@ -19,9 +22,15 @@ export const Projects: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div id="projects" className="w-screen h-screen overflow-clip">
-        <div className="flex h-fit w-fit absolute inset-0 m-auto space-x-10 z-20 bottom-4 px-20">
-          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+      <div
+        id="projects"
+        className="w-screen h-screen overflow-x-clip overflow-y-auto"
+      >
+        <div
+          className="hidden ml:flex h-fit w-fit absolute inset-0 m-auto z-20 bottom-4 px-20
+        flex-wrap xl:flex-nowrap justify-center top-[25vh] xl:top-0"
+        >
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
             <p className="font-medium text-xl">LIMFLIX - NETFLIX CLONE</p>
             <p className="text-[#ACABAB]">
               It is a web app which gives you information about the latest,
@@ -51,7 +60,7 @@ export const Projects: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
             <p className="font-medium text-xl">CODEPENCIL</p>
             <p className="text-[#ACABAB]">
               Codepencil is basically a codepen clone. It is made using react,
@@ -81,7 +90,7 @@ export const Projects: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative">
+          <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
             <p className="font-medium text-xl">RESUME MAKER</p>
             <p className="text-[#ACABAB]">
               Resume maker is a React web application. Here, you enter your
@@ -111,6 +120,106 @@ export const Projects: React.FC = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="block ml:hidden h-fit absolute inset-0 m-auto z-20">
+          <Swiper className="mySwiper">
+            <SwiperSlide>
+              <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
+                <p className="font-medium text-xl">LIMFLIX - NETFLIX CLONE</p>
+                <p className="text-[#ACABAB]">
+                  It is a web app which gives you information about the latest,
+                  trending and upcoming movies and tv shows. It is made using
+                  angular, typescript and TMDB API.
+                </p>
+                <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+                  <a
+                    className="link"
+                    href="https://limflix.netlify.app/"
+                    target="_blank"
+                  >
+                    <span className="letter">L</span>
+                    <span className="letter">i</span>
+                    <span className="letter">v</span>
+                    <span className="letter">e</span>
+                  </a>
+                  <a
+                    className="link"
+                    href="https://github.com/burhanuddin-limdi/Limflix_Movie_Website"
+                    target="_blank"
+                  >
+                    <span className="letter">C</span>
+                    <span className="letter">o</span>
+                    <span className="letter">d</span>
+                    <span className="letter">e</span>
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
+                <p className="font-medium text-xl">CODEPENCIL</p>
+                <p className="text-[#ACABAB]">
+                  Codepencil is basically a codepen clone. It is made using
+                  react, typescript, tailwindcss. I have used codemirror library
+                  to make the code editors.
+                </p>
+                <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+                  <a
+                    className="link"
+                    href="https://codepencil-project.netlify.app/"
+                    target="_blank"
+                  >
+                    <span className="letter">L</span>
+                    <span className="letter">i</span>
+                    <span className="letter">v</span>
+                    <span className="letter">e</span>
+                  </a>
+                  <a
+                    className="link"
+                    href="https://github.com/burhanuddin-limdi/Pencil-code"
+                    target="_blank"
+                  >
+                    <span className="letter">C</span>
+                    <span className="letter">o</span>
+                    <span className="letter">d</span>
+                    <span className="letter">e</span>
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="project border border-[#f5f5fa] rounded w-[340px] h-[250px] fredoka space-y-4 py-6 px-6 bg-[#101014] relative mx-5 my-5">
+                <p className="font-medium text-xl">RESUME MAKER</p>
+                <p className="text-[#ACABAB]">
+                  Resume maker is a React web application. Here, you enter your
+                  details and it sends them to NodeJS backend, which generates a
+                  pdf of your resume and sends it back.
+                </p>
+                <div className="flex text-[#ff5c00] space-x-4 absolute bottom-6 left-6">
+                  <a
+                    className="link"
+                    href="https://resume-maker-6skg.onrender.com/"
+                    target="_blank"
+                  >
+                    <span className="letter">L</span>
+                    <span className="letter">i</span>
+                    <span className="letter">v</span>
+                    <span className="letter">e</span>
+                  </a>
+                  <a
+                    className="link"
+                    href="https://github.com/burhanuddin-limdi/resume-maker-app"
+                    target="_blank"
+                  >
+                    <span className="letter">C</span>
+                    <span className="letter">o</span>
+                    <span className="letter">d</span>
+                    <span className="letter">e</span>
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <p className="absolute text-[14rem] text-[#151515] jetbrains font-medium z-[0] -left-[4rem] bottom-[3rem]">
           {"<Projects/>"}

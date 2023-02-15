@@ -28,3 +28,7 @@
     stroke-dashoffset: 2873;
   }
 }
+.swiper-slide {
+  display: grid !important;
+  place-items: center !important;
+}
